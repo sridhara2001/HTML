@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <center>
+            <h1>Marquee Tag..!</h1>
+        </center>
+        <hr>
+
+        <marquee>THIS IS A MARQUEE TAG..!</marquee>
+        <marquee><a href="#">THIS IS A MARQUEE TAG...!</a></marquee>
+        <marquee bgcolor="teal">THIS IS A MARQUEE TAG...!</marquee>
+
+        <br><hr><br>
+
+        <marquee behavior="alternate" bgcolor="skyblue">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br>
+        <marquee behavior="scroll" bgcolor="red">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br>
+        <marquee behavior="slide" bgcolor="yellow">THIS IS A MARQUEE TAG...!</marquee>
+        <br><br><hr>
+
+        <marquee direction="right" bgcolor="blue">THIS IS RIGHT DIRECTION TAG</marquee>
+        <br><br>
+        <marquee direction="left" bgcolor="red">THIS IS LEFT DIRECTION TAG</marquee>
+        <br><br>
+        <marquee direction="up" bgcolor="yellow" height="100">THIS IS UPWARD DIRECTION TAG</marquee>
+        <br><br>
+        <marquee direction="down" bgcolor="skyblue" height="100">THIS IS DOWNWARD DIRECTION TAG</marquee>
+        <br><br><hr>
+
+        <marquee bgcolor="blue" scrollamount="1">THIS IS RIGHT DIRECTION TAG</marquee>
+        <br><br>
+        <marquee bgcolor="red" scrollamount="2" id="test">THIS IS RIGHT DIRECTION TAG</marquee>
+        <br><br>
+        <marquee bgcolor="yellow" scrollamount="10">THIS IS RIGHT DIRECTION TAG</marquee>
+        <br><br>
+        <marquee bgcolor="skyblue" scrollamount="5">THIS IS RIGHT DIRECTION TAG</marquee>
+        
+        <script>
+            document.getElementById("test").onmouseover = function(){
+                document.getElementById("test").stop();
+            };
+
+            document.getElementById("test").onmouseleave = function(){
+                document.getElementById("test").start();
+            };
+        </script>
+    </body>
+</html>
